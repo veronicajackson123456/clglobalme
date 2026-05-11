@@ -85,6 +85,21 @@ export default function TermsAndConditions() {
                 You agree to indemnify and hold Company (and its officers, employees, and agents) harmless, including costs and attorneys&apos; fees, from any claim or demand made by any third party due to or arising out of (a) your use of the Site, (b) your violation of these Terms or (c) your violation of applicable laws or regulations. Company reserves the right, at your expense, to assume the exclusive defence and control of any matter for which you are required to indemnify us, and you agree to cooperate with our defence of these claims. You agree not to settle any matter without the prior written consent of Company. Company will use reasonable efforts to notify you of any such claim, action, or proceeding upon becoming aware of it.
               </p>
             </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">Contact Us</h2>
+              <p className="text-justify mb-4">
+                If you have any questions about these Terms of Use or our policies, please contact us:
+              </p>
+              <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 space-y-3">
+                <p className="font-semibold text-white">CL GLOBAL MEDIA LLC</p>
+                <div className="space-y-2 text-sm">
+                  <p><span className="text-[#d4af37] font-semibold">Address:</span> 99 Wall Street, New York 10005, USA</p>
+                  <p><span className="text-[#d4af37] font-semibold">Phone:</span> <a href="tel:+15852150461" className="hover:text-[#d4af37] transition-colors">+1 (585) 215-0461</a></p>
+                  <p><span className="text-[#d4af37] font-semibold">Email:</span> <a href="mailto:clglobalmediausa@gmail.com" className="hover:text-[#d4af37] transition-colors">clglobalmediausa@gmail.com</a></p>
+                </div>
+              </div>
+            </section>
           </div>
         </AnimatedSection>
       </div>
