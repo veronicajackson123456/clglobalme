@@ -21,10 +21,24 @@ export default function ContactPage() {
     <main className="min-h-screen bg-background">
       <Header />
       
-      <section className="mx-auto max-w-7xl px-4 pb-16 pt-36 sm:px-6 md:pb-24 md:pt-44 lg:px-8">
-        <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-primary">Direct contact</p>
-        <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">Start a clear conversation about your campaign.</h1>
-        <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">Contact CL GLOBAL MEDIA LLC using the published details below, or prepare an email using the enquiry form.</p>
+      {/* Hero Section with Image */}
+      <section className="relative min-h-[45vh] flex items-center justify-center overflow-hidden pt-20">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/contact-hero.png"
+            alt="Business meeting and campaign discussion"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 md:py-20 lg:px-8">
+          <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-primary">Direct contact</p>
+          <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">Start a clear conversation about your campaign.</h1>
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground mx-auto">Contact CL GLOBAL MEDIA LLC using the published details below, or prepare an email using the enquiry form.</p>
+        </div>
       </section>
 
       <section className="bg-card py-20 md:py-24">
