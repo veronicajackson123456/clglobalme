@@ -199,19 +199,14 @@ html {
 .delay-700 { animation-delay: 700ms; }
 .delay-800 { animation-delay: 800ms; }
 
-/* Gradient text */
+/* Brand emphasis */
 .gradient-text {
-  background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 50%, #d4af37 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary);
 }
 
-/* Gold border gradient */
 .gold-border {
-  border: 1px solid transparent;
-  background: linear-gradient(#000, #000) padding-box,
-              linear-gradient(135deg, #d4af37, #f4e4a6, #d4af37) border-box;
+  border: 1px solid var(--primary);
+  background: var(--background);
 }
 
 /* Hover card effect */

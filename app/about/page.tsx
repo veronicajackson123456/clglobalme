@@ -1,149 +1,83 @@
-"use client"
-
-import { Metadata } from "next"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, CheckCircle2 } from "lucide-react"
+import { ArrowRight, CheckCircle2, FileCheck2, Mail, MapPin, Phone, Users } from "lucide-react"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 import { AnimatedSection } from "@/components/ui/animated-section"
+
+export const metadata: Metadata = {
+  title: "Company Profile",
+  description: "Company information, leadership, services, and operating approach for CL GLOBAL MEDIA LLC.",
+}
+
+const principles = [
+  { title: "Clear scope", text: "Campaign requirements, formats, locations, and deliverables are defined before work begins." },
+  { title: "Responsible coordination", text: "A named team coordinates planning, creative requirements, and campaign communication." },
+  { title: "Direct communication", text: "Prospective clients and counterparties can contact the company using the published details below." },
+]
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-background">
       <Header />
-      
-      {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
-            alt="Modern office"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32">
-          <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6 animate-fade-in-up">
-            About Us
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in-up delay-100 font-sans">
-            Delivering <span className="gradient-text">Legendary</span><br />
-            Advertising Campaigns
-          </h1>
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-8 animate-fade-in-up delay-200">
-            With innovation, creativity, and a global reach that transforms how brands connect with their audiences.
-          </p>
-          <Link 
-            href="/contact"
-            className="group inline-flex items-center gap-2 px-8 py-4 bg-[#d4af37] hover:bg-[#b8982f] text-black font-semibold rounded-full transition-all duration-300 animate-fade-in-up delay-300"
-          >
-            Get in Touch
-            <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
-          </Link>
+      <section className="relative flex min-h-[68vh] items-end overflow-hidden pb-16 pt-32 md:pb-24">
+        <Image src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Contemporary business workspace" fill className="object-cover grayscale" priority />
+        <div className="absolute inset-0 bg-background/75" />
+        <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-primary">Company profile</p>
+          <h1 className="max-w-4xl text-balance font-sans text-4xl font-semibold leading-tight text-foreground md:text-6xl lg:text-7xl">Media planning and advertising services, presented with clarity.</h1>
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">CL GLOBAL MEDIA LLC provides outdoor and place-based advertising capabilities across roadside, transport, airport, retail, and digital formats.</p>
         </div>
       </section>
 
-      {/* Our Approach Section */}
-      <section className="py-24 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <AnimatedSection animation="fade-left">
-              <div>
-                <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
-                  Our Approach
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
-                  Redefining the Way We <span className="gradient-text">Advertise</span>
-                </h2>
-                <p className="text-white/60 leading-relaxed text-lg mb-8">
-                  At CL Global Media, we believe that advertising should be more than just getting your brand in front of people. Our approach is to create meaningful connections between our clients and their customers.
-                </p>
-                <p className="text-white/60 leading-relaxed mb-8">
-                  We do this by developing campaigns that are tailored to your brand and your audience. Our team of experts will work with you every step of the way to ensure that your campaign is a success.
-                </p>
-                <ul className="space-y-4">
-                  {["Tailored campaign strategies", "Data-driven insights", "Global network reach", "Dedicated support team"].map((item, index) => (
-                    <li key={index} className="flex items-center gap-3 text-white/80">
-                      <CheckCircle2 className="w-5 h-5 text-[#d4af37] flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection animation="fade-right">
-              <div className="relative">
-                <div className="aspect-[4/3] relative rounded-2xl overflow-hidden">
-                  <Image
-                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1920&auto=format&fit=crop"
-                    alt="Team meeting"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-6 -left-6 bg-[#d4af37] rounded-2xl p-6 shadow-2xl">
-                  <p className="text-black text-3xl font-bold">Global</p>
-                  <p className="text-black/70 text-sm">Campaign Excellence</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-[#d4af37] via-[#f4e4a6] to-[#d4af37]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-black/70 text-lg">Building powerful advertising campaigns globally with our comprehensive network and creative expertise.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* News Section */}
-      <section className="py-24 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-4">
-              Latest Updates
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white font-sans">
-              CL Global Media in the <span className="gradient-text">Press</span>
-            </h2>
+      <section className="bg-foreground py-20 text-background md:py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
+          <AnimatedSection animation="fade-left">
+            <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-background/60">Corporate overview</p>
+            <h2 className="text-balance text-3xl font-semibold md:text-5xl">A practical partner for campaign planning and delivery.</h2>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-background/70">The company works with clients to define campaign objectives, select suitable media formats, coordinate creative requirements, and maintain clear communication through delivery.</p>
+            <Link href="/services" className="mt-8 inline-flex items-center gap-2 border-b border-background pb-1 font-medium">Review our capabilities <ArrowRight aria-hidden="true" size={18} /></Link>
           </AnimatedSection>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Expanding Global Reach", desc: "New partnerships across European markets" },
-              { title: "Innovation Award 2026", desc: "Recognized for digital advertising excellence" },
-              { title: "Sustainability Initiative", desc: "Commitment to eco-friendly advertising" },
-            ].map((item, index) => (
-              <AnimatedSection key={index} animation="fade-up" delay={index * 150}>
-                <div className="group bg-[#0a0a0a] rounded-2xl overflow-hidden hover-lift">
-                  <div className="aspect-video relative">
-                    <Image
-                      src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1920&auto=format&fit=crop"
-                      alt={item.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <p className="text-[#d4af37] text-sm mb-2">Press Release</p>
-                    <h3 className="text-white font-semibold mb-2 group-hover:text-[#d4af37] transition-colors">{item.title}</h3>
-                    <p className="text-white/50 text-sm">{item.desc}</p>
-                  </div>
-                </div>
+          <AnimatedSection animation="fade-right">
+            <div className="border border-background/20 p-6 md:p-8">
+              <p className="mb-6 text-sm font-medium uppercase tracking-[0.2em] text-background/60">Published company information</p>
+              <dl className="flex flex-col gap-6">
+                <div><dt className="text-sm text-background/60">Legal name</dt><dd className="mt-1 text-xl font-medium">CL GLOBAL MEDIA LLC</dd></div>
+                <div><dt className="text-sm text-background/60">Leadership</dt><dd className="mt-1">Duncan McHugh, Founder &amp; CEO</dd></div>
+                <div className="flex gap-3"><Phone aria-hidden="true" size={20} /><div><dt className="sr-only">Phone</dt><dd><a href="tel:+15852150461">+1 (585) 215-0461</a></dd></div></div>
+                <div className="flex gap-3"><Mail aria-hidden="true" size={20} /><div><dt className="sr-only">Email</dt><dd><a href="mailto:clglobalmediausa@gmail.com">clglobalmediausa@gmail.com</a></dd></div></div>
+                <div className="flex gap-3"><MapPin aria-hidden="true" size={20} /><div><dt className="sr-only">Address</dt><dd>99 Wall Street, New York 10005, USA</dd></div></div>
+              </dl>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <AnimatedSection className="mb-12 max-w-3xl">
+            <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-primary">How we engage</p>
+            <h2 className="text-balance text-3xl font-semibold text-foreground md:text-5xl">A transparent working process.</h2>
+          </AnimatedSection>
+          <div className="grid gap-px bg-border md:grid-cols-3">
+            {principles.map((item, index) => (
+              <AnimatedSection key={item.title} animation="fade-up" delay={index * 100} className="bg-background p-8 md:min-h-72">
+                <p className="text-4xl font-light text-primary">0{index + 1}</p>
+                <h3 className="mt-16 text-xl font-semibold text-foreground">{item.title}</h3>
+                <p className="mt-3 leading-relaxed text-muted-foreground">{item.text}</p>
               </AnimatedSection>
             ))}
           </div>
         </div>
       </section>
 
+      <section className="bg-card py-20 md:py-24">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-2 lg:px-8">
+          <AnimatedSection animation="fade-left" className="flex gap-5"><Users className="mt-1 shrink-0 text-primary" aria-hidden="true" /><div><h2 className="text-2xl font-semibold">Named leadership</h2><p className="mt-3 leading-relaxed text-muted-foreground">Our published leadership team is accountable for personnel, sales, customer service, design, and company direction.</p><Link href="/team" className="mt-5 inline-flex items-center gap-2 text-primary">Meet the team <ArrowRight size={18} aria-hidden="true" /></Link></div></AnimatedSection>
+          <AnimatedSection animation="fade-right" className="flex gap-5"><FileCheck2 className="mt-1 shrink-0 text-primary" aria-hidden="true" /><div><h2 className="text-2xl font-semibold">Private due diligence</h2><p className="mt-3 leading-relaxed text-muted-foreground">Corporate and KYB information is handled directly with authorized counterparties during formal onboarding and due-diligence processes. Confidential records are not published on this website.</p><Link href="/contact" className="mt-5 inline-flex items-center gap-2 text-primary">Contact the company <ArrowRight size={18} aria-hidden="true" /></Link></div></AnimatedSection>
+        </div>
+      </section>
       <Footer />
     </main>
   )

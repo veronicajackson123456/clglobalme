@@ -7,7 +7,7 @@ const values = [
   {
     icon: Target,
     title: "Excellence",
-    description: "We strive for excellence in everything we do, setting high standards and delivering exceptional results.",
+    description: "We set clear standards for planning, communication, and the coordination of campaign requirements.",
   },
   {
     icon: Heart,

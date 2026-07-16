@@ -26,8 +26,7 @@ export function TeamHero() {
           Meet the <span className="gradient-text">Team</span>
         </h1>
         <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-          The talented professionals behind CL Global Media who are dedicated 
-          to delivering exceptional advertising solutions worldwide.
+          The published leadership of CL GLOBAL MEDIA LLC and the areas of responsibility they oversee.
         </p>
       </div>
     </section>

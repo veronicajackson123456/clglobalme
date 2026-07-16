@@ -35,15 +35,13 @@ export function HeroSection() {
         </h1>
 
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-white mb-8 leading-tight animate-fade-in-up delay-150">
-          Redefining{" "}
-          <span className="gradient-text font-sans italic">Outdoor</span>
-          <br />
-          Advertising Globally
+          Outdoor and Place-Based{" "}
+          <span className="gradient-text font-sans">Advertising Services</span>
         </h2>
         
         <p className="text-lg md:text-xl text-white/70 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-          Where innovation meets visibility. We connect brands with audiences through 
-          cutting-edge outdoor media solutions across the globe.
+          Planning and coordination capabilities across roadside, transport, airport,
+          retail, and digital advertising formats.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">

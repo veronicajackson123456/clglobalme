@@ -49,10 +49,10 @@ export function Footer() {
                 <span className="text-[#d4af37]">CL</span> Global Media
               </span>
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed mb-6">
-              Redefining outdoor advertising with our extensive network and partners. 
-              Your trusted partner in building powerful advertising campaigns worldwide.
+            <p className="text-white/50 text-sm leading-relaxed mb-3">
+              CL GLOBAL MEDIA LLC provides planning and coordination capabilities across outdoor and place-based advertising formats.
             </p>
+            <p className="text-white/70 text-xs uppercase tracking-wider">Legal name: CL GLOBAL MEDIA LLC</p>
 
           </div>
 
@@ -145,7 +145,7 @@ export function Footer() {
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <p className="text-white/30 text-sm text-center">
-              &copy; {new Date().getFullYear()} CL Global Media. All rights reserved.
+              &copy; {new Date().getFullYear()} CL GLOBAL MEDIA LLC. All rights reserved.
             </p>
         </div>
       </div>
