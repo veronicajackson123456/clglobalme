@@ -12,7 +12,7 @@ export function IntroSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         <AnimatedSection animation="fade-up">
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
-            Our Vision
+            Our Services
           </span>
         </AnimatedSection>
         

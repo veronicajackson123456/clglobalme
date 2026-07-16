@@ -10,17 +10,17 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 const digitalServices = [
   {
     title: "Paid Social Campaigns",
-    description: "We offer paid social campaigns designed to increase brand awareness, engagement and conversions. Our team creates compelling ad content and targets the right audience to reach your business goals.",
+    description: "Paid social campaign planning and management across major platforms. We develop strategy, create campaign content, and manage ongoing optimization.",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1920&auto=format&fit=crop",
   },
   {
     title: "Pay Per Click Campaigns",
-    description: "Our pay per click campaigns are tailored to your business needs and designed to maximize your return on investment. We optimize campaigns to get the most clicks for the lowest cost.",
+    description: "PPC campaign planning and management tailored to campaign objectives. We develop strategy, manage bids, and optimize for specified KPIs.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1920&auto=format&fit=crop",
   },
   {
     title: "Influencer Campaigns",
-    description: "We work with influencers across different platforms to create authentic and impactful campaigns that resonate with your target audience and drive real results.",
+    description: "Influencer campaign planning and coordination across social platforms. We identify relevant partners and manage campaign execution.",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1920&auto=format&fit=crop",
   },
 ]
@@ -29,12 +29,12 @@ const onlineServices = [
   {
     icon: Search,
     title: "Search Engine Optimization",
-    description: "Our SEO services help your website rank higher on search engine results pages. We conduct keyword research, optimize your website content and structure, and build high-quality backlinks.",
+    description: "SEO services including keyword research, website optimization, and technical SEO. We develop and implement SEO strategy aligned with campaign objectives.",
   },
   {
     icon: BarChart3,
     title: "Analytics and Reporting",
-    description: "We provide detailed analytics and reporting to help you understand the performance of your campaigns and make informed decisions with data-driven insights.",
+    description: "Campaign analytics and reporting services. We track defined metrics, provide performance dashboards, and support data-informed decision-making.",
   },
 ]
 
@@ -136,10 +136,10 @@ export default function ServicesPage() {
                   Online <span className="gradient-text">Advertising</span>
                 </h2>
                 <p className="text-white/60 leading-relaxed mb-6">
-                  With our online advertising services, you can be confident that your message will reach the right audience. From targeted campaigns to creative content, we work to ensure that your message is heard by the people who matter most.
+                  Our online advertising services include paid social, PPC, influencer coordination, SEO, and analytics. We develop campaigns aligned with your objectives and provide ongoing performance tracking.
                 </p>
                 <p className="text-white/60 leading-relaxed">
-                  Our approach is always data-driven, so you can measure the results of your investment and see the impact on your bottom line.
+                  All services include measurement and reporting to track performance against defined campaign metrics.
                 </p>
               </div>
             </AnimatedSection>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
               Outdoor <span className="gradient-text">Media</span>
             </h2>
             <p className="text-white/60 leading-relaxed max-w-3xl">
-              We specialise in outdoor advertising that stands out from the crowd. Our unique approach and strategic placement ensure maximum exposure for your brand.
+              We provide outdoor advertising planning and coordination across roadside, transport, airport, retail, and digital formats. Services include format assessment, location planning, and campaign management.
             </p>
           </AnimatedSection>
 
@@ -216,10 +216,10 @@ export default function ServicesPage() {
           <AnimatedSection className="text-center">
             <div className="p-12 rounded-3xl gold-border bg-[#0a0a0a]">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-sans">
-                Ready to Get <span className="gradient-text">Started?</span>
+                Discuss Your <span className="gradient-text">Campaign</span>
               </h2>
               <p className="text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">
-                Let&apos;s discuss how our advertising solutions can help your brand reach new heights. Our team is ready to create a custom strategy for your success.
+                Contact us to discuss your campaign objectives, advertising formats, and timeline. We&apos;ll evaluate suitable solutions and provide planning recommendations.
               </p>
               <Link
                 href="/contact"

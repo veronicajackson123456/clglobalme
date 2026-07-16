@@ -21,11 +21,11 @@ const legalLinks = [
 ]
 
 const services = [
-  "Roadside Advertising",
-  "Transport Advertising",
-  "Airport Advertising",
-  "Retail Advertising",
-  "Digital Solutions",
+  "Roadside advertising",
+  "Transport advertising",
+  "Airport advertising",
+  "Retail advertising",
+  "Digital advertising",
 ]
 
 export function Footer() {

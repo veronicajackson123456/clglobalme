@@ -39,7 +39,7 @@ Multi-market planning
                   International Coverage
                 </h3>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  We can discuss campaign requirements across markets and evaluate suitable digital and outdoor formats based on the requested locations.
+                  We discuss campaign requirements across markets and evaluate suitable digital and outdoor formats based on requested locations.
                 </p>
                 <Link 
                   href="/services"
@@ -72,7 +72,7 @@ Multi-market planning
                   Localized Impact
                 </h3>
                 <p className="text-white/70 mb-6 leading-relaxed">
-                  For localized impact, we offer a variety of advertising options in community hubs, retail centers, and transportation networks tailored to your audience.
+                  We provide advertising options in community hubs, retail centers, and transportation networks suited to specific campaign requirements.
                 </p>
                 <Link 
                   href="/services"

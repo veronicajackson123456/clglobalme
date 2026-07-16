@@ -36,7 +36,7 @@ export default function AboutPage() {
           <AnimatedSection animation="fade-left">
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-background/60">Corporate overview</p>
             <h2 className="text-balance text-3xl font-semibold md:text-5xl">A practical partner for campaign planning and delivery.</h2>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-background/70">The company works with clients to define campaign objectives, select suitable media formats, coordinate creative requirements, and maintain clear communication through delivery.</p>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-background/70">The company provides planning and coordination services for clients seeking outdoor and place-based advertising solutions across roadside, transport, airport, retail, and digital formats.</p>
             <Link href="/services" className="mt-8 inline-flex items-center gap-2 border-b border-background pb-1 font-medium">Review our capabilities <ArrowRight aria-hidden="true" size={18} /></Link>
           </AnimatedSection>
           <AnimatedSection animation="fade-right">
