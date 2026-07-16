@@ -78,6 +78,43 @@ export default function ContactPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Location Verification Section */}
+      <section className="py-16 md:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12">
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-primary">Located at</p>
+            <h2 className="text-3xl font-semibold">99 Wall Street, New York</h2>
+          </div>
+
+          {/* Street View Image */}
+          <div className="grid gap-8 lg:grid-cols-2">
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-border">
+              <Image
+                src="/images/wall-street-view.png"
+                alt="Street view of 99 Wall Street in New York's Financial District"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            {/* Google Map */}
+            <div className="relative aspect-video rounded-lg overflow-hidden border border-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0067!3d40.7074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb7e4e1%3A0x6c296c66261b50d!2s99%20Wall%20St%2C%20New%20York%2C%20NY%2010005!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="CL Global Media Office Location Map"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </main>
   )
