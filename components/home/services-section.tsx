@@ -22,7 +22,7 @@ const services = [
   {
     icon: Plane,
     title: "Airport Advertising",
-    description: "Ads in 10 key UK airports, reaching over 130 million travelers yearly.",
+    description: "Airport advertising opportunities across major terminal environments.",
   },
   {
     icon: Radio,

@@ -1,65 +1,29 @@
-"use client"
-
-import { Star, Quote } from "lucide-react"
+import Link from "next/link"
+import { ArrowRight, BriefcaseBusiness, FileCheck2, Users } from "lucide-react"
 import { AnimatedSection } from "@/components/ui/animated-section"
 
-const testimonials = [
-  {
-    quote: "CL Global Media transformed our advertising strategy. Their innovative approach and extensive network delivered exceptional results.",
-    author: "Sarah Johnson",
-  },
-  {
-    quote: "The team's dedication to our success was evident from day one. They exceeded all expectations with their creative solutions.",
-    author: "Michael Chen",
-  },
-  {
-    quote: "Outstanding service and remarkable reach. Our brand visibility increased significantly within the first quarter.",
-    author: "Emma Williams",
-  },
+const trustSignals = [
+  { icon: BriefcaseBusiness, title: "Defined capabilities", text: "Roadside, transport, airport, retail, and digital advertising services are described by format and scope." },
+  { icon: Users, title: "Named leadership", text: "The company publishes the names and responsibilities of its CEO and functional leadership team." },
+  { icon: FileCheck2, title: "Responsible due diligence", text: "Confidential corporate information is shared privately with authorized counterparties during formal onboarding." },
 ]
 
 export function HappyClientsSection() {
   return (
-    <section className="py-24 bg-gradient-to-r from-[#d4af37] via-[#f4e4a6] to-[#d4af37] relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")" }} />
-      </div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <AnimatedSection className="text-center mb-16">
-          <div className="flex justify-center gap-1 mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-black fill-black" />
-            ))}
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-black font-sans">
-            Happy Clients
-          </h2>
-          <p className="text-black/70 mt-4 text-lg">
-            Trusted by leading brands worldwide
-          </p>
+    <section className="bg-foreground py-20 text-background md:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <AnimatedSection className="mb-12 max-w-3xl">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-background/60">Corporate transparency</p>
+          <h2 className="text-balance text-3xl font-semibold md:text-5xl">Trust starts with clear, accountable information.</h2>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-background/70">We present our services as capabilities, identify the people responsible for delivery, and keep confidential due-diligence records within the appropriate private process.</p>
         </AnimatedSection>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <AnimatedSection
-              key={index}
-              animation="fade-up"
-              delay={index * 150}
-            >
-              <div className="bg-black/90 backdrop-blur-sm rounded-2xl p-8 h-full">
-                <Quote className="w-10 h-10 text-[#d4af37] mb-6" />
-                <p className="text-white/80 leading-relaxed mb-6 italic">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <div className="border-t border-white/10 pt-6">
-                  <p className="text-white font-semibold">{testimonial.author}</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
+        <div className="grid gap-px bg-background/20 md:grid-cols-3">
+          {trustSignals.map((item, index) => {
+            const Icon = item.icon
+            return <AnimatedSection key={item.title} animation="fade-up" delay={index * 100} className="bg-foreground p-7 md:min-h-64"><Icon aria-hidden="true" className="text-primary" /><h3 className="mt-16 text-xl font-semibold">{item.title}</h3><p className="mt-3 leading-relaxed text-background/65">{item.text}</p></AnimatedSection>
+          })}
         </div>
+        <Link href="/about" className="mt-10 inline-flex items-center gap-2 border-b border-background pb-1 font-medium">View the company profile <ArrowRight aria-hidden="true" size={18} /></Link>
       </div>
     </section>
   )

@@ -22,7 +22,7 @@ const transportOptions = [
   {
     title: "Metro",
     description: "Expanding brand presence in bustling city centers.",
-    image: "https://images.unsplash.com/photo-1565354810165-c3678116e5d1?q=80&w=1920&auto=format&fit=crop",
+    image: "/images/metro-advertising.png",
   },
   {
     title: "Tram",

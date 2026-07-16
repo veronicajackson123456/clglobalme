@@ -20,7 +20,7 @@ export default function Disclaimer() {
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">1. General Disclaimer</h2>
               <p className="text-justify mb-3">
-                The information contained on the clglobalmedia.com website (the "Site") is provided by CL Global Media LLC for general informational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
+                The information contained on the clglobalmedia.com website (the "Site") is provided by CL GLOBAL MEDIA LLC for general informational purposes only. All information on the Site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the Site.
               </p>
               <p className="text-justify">
                 Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the Site or reliance on any information provided on the Site. Your use of the Site and your reliance on any information on the Site is solely at your own risk.
@@ -63,7 +63,7 @@ export default function Disclaimer() {
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">5. External Links Disclaimer</h2>
               <p className="text-justify">
-                The Site may contain links to external websites that are not provided or maintained by, or in any way affiliated with, CL Global Media LLC. Please note that CL Global Media LLC does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorsement of the views expressed within them. We have no control over the nature, content, and availability of those sites.
+                The Site may contain links to external websites that are not provided or maintained by, or in any way affiliated with, CL GLOBAL MEDIA LLC. Please note that CL GLOBAL MEDIA LLC does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorsement of the views expressed within them. We have no control over the nature, content, and availability of those sites.
               </p>
             </section>
 
@@ -80,7 +80,7 @@ export default function Disclaimer() {
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">7. Limitation of Liability</h2>
               <p className="text-justify mb-3">
-                To the fullest extent permitted by applicable law, CL Global Media LLC shall not be liable for:
+                To the fullest extent permitted by applicable law, CL GLOBAL MEDIA LLC shall not be liable for:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mb-6">
                 <li>Any indirect, incidental, special, consequential, or punitive damages</li>
@@ -116,7 +116,7 @@ export default function Disclaimer() {
             <section>
               <h2 className="text-2xl font-semibold text-[#d4af37] mb-4">10. Viruses and Security</h2>
               <p className="text-justify mb-3">
-                We take reasonable precautions to prevent viruses and malicious content; however, CL Global Media LLC:
+                We take reasonable precautions to prevent viruses and malicious content; however, CL GLOBAL MEDIA LLC:
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4 mb-6">
                 <li>Does not guarantee the Site is free from viruses or malicious code</li>

@@ -12,23 +12,22 @@ export function IntroSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         <AnimatedSection animation="fade-up">
           <span className="inline-block px-4 py-1.5 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded-full mb-6">
-            Our Vision
+            Our Services
           </span>
         </AnimatedSection>
         
         <AnimatedSection animation="fade-up" delay={100}>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight font-sans">
-            Connecting Brands with{" "}
-            <span className="gradient-text">Audiences Worldwide</span>
+            Planning Advertising Across{" "}
+            <span className="gradient-text">Multiple Media Formats</span>
           </h2>
         </AnimatedSection>
         
         <AnimatedSection animation="fade-up" delay={200}>
           <p className="text-lg text-white/60 leading-relaxed max-w-3xl mx-auto">
-            CL Global Media is among the foremost outdoor advertising companies, boasting a diverse 
-            portfolio that spans airports, roadside billboards, premium digital displays in top-tier 
-            locations, and more. We believe in the power of outdoor advertising to create meaningful 
-            connections with audiences everywhere.
+            CL GLOBAL MEDIA LLC provides planning and coordination capabilities across airport, roadside,
+            retail, transport, and digital advertising formats. We work with prospective clients to define
+            campaign requirements and identify formats suited to their audience and objectives.
           </p>
         </AnimatedSection>
       </div>

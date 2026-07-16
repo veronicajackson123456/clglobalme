@@ -20,9 +20,7 @@ export function JoinTeam() {
               Join Our <span className="gradient-text">Growing Team</span>
             </h2>
             <p className="text-white/60 leading-relaxed mb-8 max-w-2xl mx-auto">
-              We&apos;re always looking for talented individuals who share our passion for 
-              innovation and excellence. If you&apos;re ready to make an impact in the 
-              advertising industry, we&apos;d love to hear from you.
+              For current career opportunities and inquiries, please contact the company directly with your resume and background information.
             </p>
             <Link
               href="/contact"

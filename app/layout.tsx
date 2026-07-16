@@ -16,8 +16,11 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Home | CL Global Media',
-  description: 'CL Global Media - Redefining outdoor advertising with our extensive network and partners.',
+  title: {
+    default: 'CL Global Media | Outdoor Advertising Services',
+    template: '%s | CL Global Media',
+  },
+  description: 'CL GLOBAL MEDIA LLC provides planning and coordination capabilities across outdoor and place-based advertising formats.',
 }
 
 export default function RootLayout({
@@ -26,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
-      <body className={`${poppins.variable} ${inter.variable} font-sans antialiased bg-black text-white`}>
+    <html lang="en" className="scroll-smooth bg-background" data-scroll-behavior="smooth">
+      <body className={`${poppins.variable} ${inter.variable} bg-background font-sans text-foreground antialiased`}>
         {children}
         <Analytics />
       </body>

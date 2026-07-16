@@ -6,23 +6,23 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 const values = [
   {
     icon: Target,
-    title: "Excellence",
-    description: "We strive for excellence in everything we do, setting high standards and delivering exceptional results.",
+    title: "Transparency",
+    description: "We communicate clearly about capabilities, constraints, and campaign planning. All client information is handled according to published policies.",
   },
   {
     icon: Heart,
-    title: "Passion",
-    description: "Our passion for advertising drives us to create innovative campaigns that resonate with audiences.",
+    title: "Accountability",
+    description: "Our named leadership is responsible for service delivery, client communication, and company operations.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation",
-    description: "We embrace new technologies and creative approaches to stay ahead in the ever-evolving media landscape.",
+    title: "Communication",
+    description: "Clear, direct communication throughout campaign planning and execution. Regular updates and accessible contact channels.",
   },
   {
     icon: Shield,
-    title: "Integrity",
-    description: "We operate with transparency and honesty, building trust with our clients and partners.",
+    title: "Professionalism",
+    description: "We maintain professional standards in all client interactions, campaign management, and corporate operations.",
   },
 ]
 
