@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { AnimatedSection } from "@/components/ui/animated-section"
@@ -19,10 +20,25 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
-      <section className="mx-auto max-w-7xl px-4 pb-16 pt-36 sm:px-6 md:pb-24 md:pt-44 lg:px-8">
-        <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-primary">Direct contact</p>
-        <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">Start a clear conversation about your campaign.</h1>
-        <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">Contact CL GLOBAL MEDIA LLC using the published details below, or prepare an email using the enquiry form.</p>
+      
+      {/* Hero Section with Image */}
+      <section className="relative min-h-[45vh] flex items-center justify-center overflow-hidden pt-20">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/contact-hero.png"
+            alt="Business meeting and campaign discussion"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/70 to-background" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 md:py-20 lg:px-8">
+          <p className="mb-5 text-sm font-medium uppercase tracking-[0.22em] text-primary">Direct contact</p>
+          <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-tight md:text-6xl lg:text-7xl">Start a clear conversation about your campaign.</h1>
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground mx-auto">Contact CL GLOBAL MEDIA LLC using the published details below, or prepare an email using the enquiry form.</p>
+        </div>
       </section>
 
       <section className="bg-card py-20 md:py-24">
@@ -36,6 +52,16 @@ export default function ContactPage() {
               <div className="flex items-start gap-4 text-muted-foreground"><MapPin className="mt-1 shrink-0 text-primary" aria-hidden="true" /><span><strong className="block text-foreground">Address</strong>99 Wall Street<br />New York 10005<br />USA</span></div>
             </div>
             <div className="mt-12 border-l-2 border-primary pl-5"><h3 className="font-semibold">Corporate enquiries</h3><p className="mt-2 leading-relaxed text-muted-foreground">Authorized counterparties may request corporate and KYB information directly as part of a formal, private due-diligence process.</p></div>
+
+            {/* Office Location Image */}
+            <div className="mt-12 relative aspect-video rounded-lg overflow-hidden border border-border">
+              <Image
+                src="/images/contact-office.png"
+                alt="CL Global Media Office Location - 99 Wall Street, New York"
+                fill
+                className="object-cover"
+              />
+            </div>
           </AnimatedSection>
 
           <AnimatedSection animation="fade-right">
