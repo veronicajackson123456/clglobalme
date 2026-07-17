@@ -4,9 +4,9 @@ import { AnimatedSection } from "@/components/ui/animated-section"
 
 const ceo = { name: "Duncan McHugh", role: "Founder & CEO", bio: "Duncan McHugh leads CL GLOBAL MEDIA LLC and is responsible for company direction, client engagement, and the coordination of its media and advertising services.", initials: "DM" }
 const leadershipTeam = [
-  { name: "John Hamilton", role: "Head of Personnel", bio: "Responsible for personnel planning, team coordination, and supporting the company’s working culture.", initials: "JH" },
-  { name: "Lucía Rodríguez", role: "Head of Sales", bio: "Responsible for sales activity, prospective client communication, and the commercial development of advertising opportunities.", initials: "LR" },
-  { name: "Antoine Dubois", role: "Head of Customer Service", bio: "Responsible for client communication and coordination throughout campaign planning and delivery.", initials: "AD" },
+  { name: "Michael Matthews", role: "Head of Personnel", bio: "Responsible for personnel planning, team coordination, and supporting the company's working culture.", initials: "MM" },
+  { name: "Miles Parker", role: "Head of Sales", bio: "Responsible for sales activity, prospective client communication, and the commercial development of advertising opportunities.", initials: "MP" },
+  { name: "Tristan Marsh", role: "Head of Customer Service", bio: "Responsible for client communication and coordination throughout campaign planning and delivery.", initials: "TM" },
   { name: "Saud Baig", role: "Head of Design", bio: "Responsible for design direction and the coordination of creative requirements across advertising formats.", initials: "SB" },
 ]
 

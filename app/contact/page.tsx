@@ -14,7 +14,7 @@ export default function ContactPage() {
     event.preventDefault()
     const subject = encodeURIComponent(`Website enquiry from ${formData.name}`)
     const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || "Not provided"}\n\n${formData.message}`)
-    window.location.href = `mailto:clglobalmediausa@gmail.com?subject=${subject}&body=${body}`
+    window.location.href = `mailto:enquiries@clglobalmedia.com?subject=${subject}&body=${body}`
   }
 
   return (
@@ -48,7 +48,7 @@ export default function ContactPage() {
             <h2 className="text-3xl font-semibold">CL GLOBAL MEDIA LLC</h2>
             <div className="mt-10 flex flex-col gap-7">
               <a href="tel:+15852150461" className="flex items-start gap-4 text-muted-foreground transition-colors hover:text-foreground"><Phone className="mt-1 shrink-0 text-primary" aria-hidden="true" /><span><strong className="block text-foreground">Phone</strong>+1 (585) 215-0461</span></a>
-              <a href="mailto:clglobalmediausa@gmail.com" className="flex items-start gap-4 break-all text-muted-foreground transition-colors hover:text-foreground"><Mail className="mt-1 shrink-0 text-primary" aria-hidden="true" /><span><strong className="block text-foreground">Email</strong>clglobalmediausa@gmail.com</span></a>
+              <a href="mailto:enquiries@clglobalmedia.com" className="flex items-start gap-4 break-all text-muted-foreground transition-colors hover:text-foreground"><Mail className="mt-1 shrink-0 text-primary" aria-hidden="true" /><span><strong className="block text-foreground">Email</strong>enquiries@clglobalmedia.com</span></a>
               <div className="flex items-start gap-4 text-muted-foreground"><MapPin className="mt-1 shrink-0 text-primary" aria-hidden="true" /><span><strong className="block text-foreground">Address</strong>99 Wall Street<br />New York 10005<br />USA</span></div>
             </div>
             <div className="mt-12 border-l-2 border-primary pl-5"><h3 className="font-semibold">Corporate enquiries</h3><p className="mt-2 leading-relaxed text-muted-foreground">Authorized counterparties may request corporate and KYB information directly as part of a formal, private due-diligence process.</p></div>
