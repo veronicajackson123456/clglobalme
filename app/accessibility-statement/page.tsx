@@ -152,7 +152,7 @@ export default function AccessibilityStatement() {
                 <div className="space-y-2 text-sm">
                   <p><span className="text-[#d4af37] font-semibold">Address:</span> 99 Wall Street, New York 10005, USA</p>
                   <p><span className="text-[#d4af37] font-semibold">Phone:</span> <a href="tel:+15852150461" className="hover:text-[#d4af37] transition-colors">+1 (585) 215-0461</a></p>
-                  <p><span className="text-[#d4af37] font-semibold">Email:</span> <a href="mailto:clglobalmediausa@gmail.com" className="hover:text-[#d4af37] transition-colors">clglobalmediausa@gmail.com</a></p>
+                  <p><span className="text-[#d4af37] font-semibold">Email:</span> <a href="mailto:enquiries@clglobalmedia.com" className="hover:text-[#d4af37] transition-colors">enquiries@clglobalmedia.com</a></p>
                 </div>
               </div>
             </section>

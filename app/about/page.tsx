@@ -46,7 +46,7 @@ export default function AboutPage() {
                 <div><dt className="text-sm text-background/60">Legal name</dt><dd className="mt-1 text-xl font-medium">CL GLOBAL MEDIA LLC</dd></div>
                 <div><dt className="text-sm text-background/60">Leadership</dt><dd className="mt-1">Duncan McHugh, Founder &amp; CEO</dd></div>
                 <div className="flex gap-3"><Phone aria-hidden="true" size={20} /><div><dt className="sr-only">Phone</dt><dd><a href="tel:+15852150461">+1 (585) 215-0461</a></dd></div></div>
-                <div className="flex gap-3"><Mail aria-hidden="true" size={20} /><div><dt className="sr-only">Email</dt><dd><a href="mailto:clglobalmediausa@gmail.com">clglobalmediausa@gmail.com</a></dd></div></div>
+                <div className="flex gap-3"><Mail aria-hidden="true" size={20} /><div><dt className="sr-only">Email</dt><dd><a href="mailto:enquiries@clglobalmedia.com">enquiries@clglobalmedia.com</a></dd></div></div>
                 <div className="flex gap-3"><MapPin aria-hidden="true" size={20} /><div><dt className="sr-only">Address</dt><dd>99 Wall Street, New York 10005, USA</dd></div></div>
               </dl>
             </div>

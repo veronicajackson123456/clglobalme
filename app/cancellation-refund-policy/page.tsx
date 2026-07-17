@@ -75,7 +75,7 @@ export default function CancellationRefundPolicy() {
               <div className="bg-zinc-900 p-6 rounded-lg border border-zinc-800 space-y-3">
                 <div className="space-y-2 text-sm">
                   <p><span className="text-[#d4af37] font-semibold">Phone:</span> <a href="tel:+15852150461" className="hover:text-[#d4af37] transition-colors">+1 (585) 215-0461</a></p>
-                  <p><span className="text-[#d4af37] font-semibold">Email:</span> <a href="mailto:clglobalmediausa@gmail.com" className="hover:text-[#d4af37] transition-colors">clglobalmediausa@gmail.com</a></p>
+                  <p><span className="text-[#d4af37] font-semibold">Email:</span> <a href="mailto:enquiries@clglobalmedia.com" className="hover:text-[#d4af37] transition-colors">enquiries@clglobalmedia.com</a></p>
                   <p className="text-white/60">Please include your order number, campaign details, and a brief explanation of your request.</p>
                 </div>
               </div>
